@@ -26,7 +26,7 @@ public class Test {
 
 
         // Set available ingredients in machine
-        machine.addIngredient(new Ingredient("water", 500));
+        machine.addIngredient(new Ingredient("water", 150));
         machine.addIngredient(new Ingredient("milk", 500));
         machine.addIngredient(new Ingredient("elaichi", 50));
         machine.addIngredient(new Ingredient("ginger", 50));
@@ -38,13 +38,13 @@ public class Test {
         machine.prepare(1, elaichiTea);
         machine.prepare(2, gingerTea);
         machine.prepare(3, hotMilk);
+
+        // should throw error for below - insufficient quantity
         machine.prepare(4, hotWater);
 
         // error should be thrown for below since outlet 1 is already occupied
         machine.prepare(1, coffee);
 
         machine.stop();
-
-
     }
 }
