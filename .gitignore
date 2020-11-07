@@ -1,3 +1,4 @@
 .idea/
 out/
-vending-machine.iml
+*.iml
+
