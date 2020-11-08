@@ -7,7 +7,7 @@ import Producer.StringProducer;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
-public class PubSub {
+public class ProducerConsumer {
     public static void main(String args[]) throws InterruptedException {
         Channel<String> stringChannel = new StringChannel();
         //Channel<Integer> integerChannel = new IntegerChannel();
